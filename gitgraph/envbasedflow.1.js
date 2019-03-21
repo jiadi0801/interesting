@@ -104,7 +104,7 @@ let release1 = gitgraph.branch({
   column: col.release[0]
 });
 
-master.merge(release1, {tag: '[失效]0.0.2.1被0.0.2.2抢占合并',message: 'merge master and run CI CD'});
+master.merge(release1, {tag: '[失效]0.0.2.1被0.0.2.2抢占合并', tagColor: "gray",message: 'merge master and run CI CD'});
 
 feature2.checkout();
 let release2 = gitgraph.branch({
